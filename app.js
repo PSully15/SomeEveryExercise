@@ -6,7 +6,7 @@ Examples:
     hasOddNumber([2,2,2,2,2,4]) // false
 */
 
-const hasOddNumber = (arr) => {
+function hasOddNumber(arr) {
     return arr.some((val) => {
         return val % 2 !== 0;
     });
@@ -71,7 +71,7 @@ Examples:
 
 function hasCertainKey(arr, key) {
     return arr.every((val) => {
-        return key in val
+        return key in val;
     });
 }
 
